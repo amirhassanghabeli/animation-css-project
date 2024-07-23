@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box-one {
+    /* background-color: rgb(71, 71, 245); */
+    height: 240px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.box-two {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.image-one {
+    width: 100px;
+    animation-name: abr;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    mix-blend-mode: color-burn;
+}
+
+@keyframes abr {
+    100% {
+        transform: translateX(-100px)
+    }
+}
+
+.image-two {
+    width: 100px;
+    animation-name: khorshid;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+    animation-iteration-count: 2;
+    mix-blend-mode: color-burn;
+
+}
+
+@keyframes khorshid {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+
+        transform: translateX(180px);
+    }
+}
+
+.image-three {
+    width: 100px;
+    animation-name: mario;
+    animation-duration: 15s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes mario {
+    0% {
+        transform: translateX(0px);
+    }
+
+    15% {
+        transform: translateX(500px);
+    }
+
+    30% {
+        transform: translate(850px, -150px);
+    }
+
+    50% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(1350px);
+    }
+
+}
+
+.image-four {
+    width: 50px;
+    animation-name: step;
+    animation-duration: 4s;
+    animation-delay: 0.8s;
+}
+
+@keyframes step {
+    100% {
+        transform: scaley(1.3);
+    }
+}
